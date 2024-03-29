@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .gallery-container {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .gallery-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .photo {
+            margin: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 30%;
+            position: relative;
+        }
+
+        .photo:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            background-color: #004a99;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 18px;
+        }
+        .back-button {
+            background-color: #007bff; /* Bootstrap primary color for example */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px; /* To add some space below the button */
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <a href="index.html" class="back-button">Back to Home</a>
+
+    <div class="gallery-title">Projects Photo Gallery</div>
+    <div class="gallery">
+        <div class="photo">
+            <img src="images/photogal1.png" alt="Breakwater">
+            <div class="caption">BREAKWATER</div>
+        </div>
+        <div class="photo">
+            <img src="images/photogal2.png" alt="Floating Barriers">
+            <div class="caption">FLOATING BARRIERS</div>
+        </div>
+        <div class="photo">
+            <img src="images/photogal3.png" alt="Cone Fenders">
+            <div class="caption">CONE FENDERS</div>
+        </div>
+        <div class="photo">
+            <img src="images/photogal4.png" alt="Ship's Hull Cleaning">
+            <div class="caption">SHIP’S HULL CLEANING</div>
+        </div>
+        <!-- More photos can be added here -->
+    </div>
+</div>
+
+</body>
+</html>
